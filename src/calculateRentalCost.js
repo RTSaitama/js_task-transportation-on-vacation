@@ -7,13 +7,15 @@
 function calculateRentalCost(days) {
   const rentPerDay = 40;
   const rentPeriod = days;
+  const shortTerm = 3;
+  const LongTerm = 7;
   let discount = 50;
 
-  if (rentPeriod < 7) {
+  if (rentPeriod < LongTerm) {
     discount = 20;
   }
 
-  if (rentPeriod < 3) {
+  if (rentPeriod < shortTerm) {
     discount = 0;
   }
 
