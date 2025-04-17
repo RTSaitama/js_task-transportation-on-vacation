@@ -6,7 +6,7 @@
 
 const SHORTTERM = 3;
 const LONGTERM = 7;
-const RENTPERDAY = 40;
+const rentperday = 40;
 
 function calculateRentalCost(days) {
   const rentPeriod = days;
@@ -21,7 +21,7 @@ function calculateRentalCost(days) {
     discount = 0;
   }
 
-  return RENTPERDAY * rentPeriod - discount;
+  return rentperday * rentPeriod - discount;
 }
 
 module.exports = calculateRentalCost;
