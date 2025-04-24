@@ -13,9 +13,7 @@ function calculateRentalCost(days) {
     return RENT_PER_DAY * days - SHORT_TERM_DISCOUNT;
   }
 
-  if (days < SHORT_TERM) {
-    return RENT_PER_DAY * days;
-  }
+  return RENT_PER_DAY * days;
 }
 
 module.exports = calculateRentalCost;
